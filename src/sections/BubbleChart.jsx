@@ -111,7 +111,7 @@ export function BubbleChart({ data }) {
         <Card className="w-full border-none relative bg-[url(assets/bg.png)] p-0 lg:w-1/2 h-screen ">
             <div className="text-white font-graphik flex absolute z-50 w-full items-center justify-between px-12 py-12">
                 <div className="flex items-center gap-2">
-                    <img src={'/public/debias.png'} className="h-24   bg-no-repeat object-contain" />
+                    <img src={'https://tabodozo.sirv.com/debias.png'} className="h-24   bg-no-repeat object-contain" />
                 </div>
                 <div className="text-xl flex flex-col">
                     {data && <p>Overall label: {data?.label}</p>}

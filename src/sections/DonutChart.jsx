@@ -34,8 +34,8 @@ const chartConfig = {
 export function DonutChart({ data, payload, setPayload, isStatic }) {
     console.log(data)
     const chartData2 = data?.percentage_biased ? [
-        { label: "Biased", value: data?.percentage_biased, fill: "#D24781" },
-        { label: "Unbiased", value: data?.percentage_nonbiased, fill: "#96939C" }, // Single Entry
+        { label: "Biased", value: data?.percentage_biased, fill: "#679962" },
+        { label: "Unbiased", value: data?.percentage_nonbiased, fill: "#143450" }, // Single Entry
     ] : [
         { label: "Biased", value: Number((data?.score * 100).toFixed()), fill: "#679962" },
         { label: "Unbiased", value: Number(((1 - data?.score) * 100).toFixed()), fill: "#143450" }, // Single Entry
